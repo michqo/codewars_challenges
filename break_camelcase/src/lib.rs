@@ -1,5 +1,15 @@
+#[allow(dead_code)]
 fn solution(s: &str) -> String {
-    todo!()
+    let mut new_s = String::new();
+
+    for c in s.chars() {
+        if c.is_ascii_uppercase() {
+            new_s.push(' ');
+        }
+        new_s.push(c);
+    }
+
+    new_s
 }
 
 #[cfg(test)]
